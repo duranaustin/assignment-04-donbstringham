@@ -20,6 +20,11 @@ namespace BlabberApp.Domain.Blab
             var _d = d;
         }
 
+        public BlabCollection(BlabberApp.DataStore.BlabRedisDataStore d)
+        {
+            _blabs = new List<BlabEntity>();
+            var _d = d;
+        }
         public int Count()
         {
             return blabs.Count;
