@@ -46,7 +46,10 @@ namespace BlabberApp.DataStore
         {
             return MyBuffer[FindIndex(ID)];
         }
-
+        public List<IDomain> ReadAll()
+        {
+            return MyBuffer;
+        }
         public void Remove(string ID)
         {
             Delete(ID);
